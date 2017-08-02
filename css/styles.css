@@ -1,0 +1,295 @@
+/* Custom Style */
+
+body {
+  background: #eee;
+  color: #444;
+  height: 100%;
+	width: 100%;	
+  /*scroll-behavior: smooth;*/
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.mdl-card__supporting-text {
+  color: #444;
+}
+
+.mdl-layout {
+  overflow: hidden;
+  position: fixed;
+  /*scroll-behavior: smooth;*/
+}
+
+/* Special Code to keep the footer at bottom */
+
+.mdl-layout__content {
+  /* display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;*/
+}
+
+.mdl-layout__content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.mdl-layout__content > *:not(.mdl-layout-spacer) {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+/* Special Code to keep the footer at bottom */
+ 
+
+.mdl-mini-footer {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.contact-container {
+	margin: 0 50 auto;
+	padding: 0;
+	text-align: center;
+  width: 300px;
+
+}
+
+.contact-container ul li .active {
+  border-bottom: 2px solid #41e090;
+  color: #41e090;
+}
+
+.contact-container ul li {
+  list-style: none;
+  font-size: 17px;
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 1000px) {
+    #res-nav { 
+      display: none !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+	.contact-container {
+	  width: 400px;
+	  margin: 0 0 auto;
+  }
+
+  blockquote {
+    font-size: 14px;
+  }
+
+  .mdl-textfield__error {
+    
+    font-size: 8px;
+    margin-top: 0px;
+
+  }
+
+}
+
+.contact-container a {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px; 
+  width: 700px;
+}
+
+.mdl-grid {
+	max-width: 900px;
+}
+
+.mdl-navigation a {
+ 	color: black;
+}
+
+.mdl-layout__tab-bar  {
+	max-width: 350;
+	margin: 0 auto;
+}
+
+/* Mobile Style */
+
+@media only screen and (max-width: 800px) {
+
+	.mdl-layout__tab-bar {
+		padding: 0;
+	}
+
+}
+
+.mdl-layout__tab-bar a {
+	margin: 0 auto;
+}
+
+.social-btn__twitter {
+	background: url('../img/twitter-bg.png');
+}
+
+.social-btn__facebook {
+	background: url('../img/facebook-bg.png');
+}
+
+.social-btn__gplus {
+	background: url('../img/gplus-bg.png');
+}
+
+.social-btn__github {
+	background: url('../img/github-bg.svg');
+}
+
+.social-btn__linkedin {
+	background: url('../img/linkedin-bg.png');
+}
+
+.social-btn__insta {
+	background: url('../img/instagram-bg.png');
+}
+
+.social-btn {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 24px;
+  margin: 0 10px;
+  opacity: 0.46;
+  width: 24px;
+}
+
+img {
+	border-radius: 50%;
+	box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+	margin-top: -90px;
+	width: 70px;
+}
+
+/* email icon fixed on scroll */
+
+#email-me {
+	bottom: 0;
+	display: block;
+	left: 0;
+	margin-left: 30px;
+	margin-bottom: 45px;
+	position: absolute;
+	z-index: 900;
+}
+
+#res-nav {
+    top: 160px;
+    display: block;
+    right: 0;
+    margin-left: 30px;
+    /*margin-bottom: 100px;*/
+    position: absolute;
+    z-index: 900;
+    width: 14%;
+    text-align: left;
+}
+
+.applications {
+	list-style: none;
+}
+
+.applications a {
+	font-weight: 600;
+}
+
+.applications li,
+.skills-zone li {
+	line-height: 25px;
+}
+
+.mdl-button {
+	font-size: 12px;
+	color: #fff !important;
+}
+
+.res-container {
+	padding: 10px 50px 50px 50px !important;
+}
+
+/* Mobile Style */
+
+@media only screen and (max-width: 800px) {
+
+	.mdl-layout__content h2, .mdl-layout__content h3 {
+		font-size: 150%;
+	}
+
+	.mdl-layout__content h4 {
+		font-size: 120%;
+	}
+
+		.mdl-button {
+		font-size: 10px;
+	}
+
+}
+
+.padding-cell,
+.skills-zone {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.skills-title h3 {
+  margin-bottom: 0;
+}
+
+.pdf-print a {
+	color: #222;
+}
+
+.mdl-cell--1-col-phone.mdl-cell--1-col-phone {
+    width: calc(33% - 16px);
+ }
+
+
+.form-messages {
+    /* border-radius: 3px; */
+    color: #fff;
+    margin: 0 auto;
+    /* margin-bottom: 30px; */
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    z-index: 9999;
+    font-size: 16;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.success {
+	background: #69F0AE;
+}
+
+.error {
+	background: rgba(209, 46, 46, 0.8);
+}
+
+#egghead {
+  display: none;
+}
